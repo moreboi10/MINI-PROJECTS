@@ -6,17 +6,18 @@
     <title>spotify clone</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="container flex bg-black">
+      <!-- container start -->
+
       <div class="left border rounded p-1">
+        <!-- left panel start -->
         <div class="home bg-grey rounded m-1 p-1">
+          <!-- home section start -->
           <div class="logo">
-            <img
-              class="invert"
-              src="assests/images/black_logo.svg"
-              alt="logo"
-            />
+            <img src="assests/images/spotify_logo.svg" alt="logo" />
           </div>
           <ul>
             <li>
@@ -35,7 +36,10 @@
             </li>
           </ul>
         </div>
+        <!-- home section end -->
+
         <div class="library bg-grey rounded m-1 p-1">
+          <!-- library section start -->
           <div class="heading items-center">
             <img
               class="invert"
@@ -44,7 +48,13 @@
             />
             <h2>Your library</h2>
           </div>
+          <div class="songlist">
+            <ul>
+              <li> song name</li>
+            </ul>
+          </div>
           <div class="footer">
+            <!-- footer links start -->
             <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
             <div>
               <a href="https://www.spotify.com/in-en/safetyandprivacy/"
@@ -66,16 +76,19 @@
                 >About Ads</a
               >
             </div>
-            <!-- <div>
-              <a href="https://www.spotify.com/in-en/accessibility/"
-                >Accessibility</a
-              >
-            </div> -->
+            <!-- <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div> -->
           </div>
+          <!-- footer links end -->
         </div>
+        <!-- library section end -->
       </div>
+      <!-- left panel end -->
+
       <div class="right border bg-grey rounded">
+        <!-- right panel start -->
+
         <div class="header bg-grey2 m-1 rounded">
+          <!-- header/nav bar start -->
           <div class="nav">
             <img
               class="invert"
@@ -85,16 +98,103 @@
             <img
               class="invert"
               src="assests/images/angle-right-nav.svg"
-              alt="angled left"
+              alt="angled right"
             />
           </div>
+
           <div class="buttons">
-            <button>Log In</button>
-            <button>Sign Up</button>
+            <button class="signupbtn bg-grey2">Sign Up</button>
+            <button class="loginbtn">Log In</button>
           </div>
         </div>
+        <!-- header/nav bar end -->
+
+        <!-- card container start -->
+        <div class="spotify-playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="card-container">
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/ashiqui2.jpg" alt="img" />
+              <h2>Aashiqui 2</h2>
+              <p>Mithoon , Ankit Tiwari , Jeet Gannguli</p>
+            </div>
+
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/YJHD.jpg" alt="img" />
+              <h2>Yeh Jawaani hai Diwaani</h2>
+              <p>Pritam</p>
+            </div>
+
+            <!-- Additional cards (commented) -->
+            <!-- 
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/sanam teri kasam.jpg" alt="img" />
+              <h2>Sanam Teri Kasam</h2>
+              <p>Himesh Reshammiya , Sameer Anjaan , Subrat Sinha</p>
+            </div>
+
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/finding her.jpg" alt="img" />
+              <h2>Finding Her</h2>
+              <p>Kushagra , Bharath , saahel</p>
+            </div>
+
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/prejudice.jpg" alt="img" />
+              <h2>Sirra</h2>
+              <p>Guru Randhawa</p>
+            </div>
+
+            <div class="card bg-grey2 p-1 rounded">
+              <div class="play">
+                <img src="assests/images/play-solid.svg" alt="" />
+              </div>
+              <img src="assests/thumbnails/maand.jpg" alt="img" />
+              <h2>Maand</h2>
+              <p>Bayaan, Hasan Raheem</p>
+            </div>
+            -->
+          </div>
+          <!-- card-container end -->
+        </div>
+        <!-- spotify-playlists end -->
+
+        <div class="playbar">
+          <!-- playbar start -->
+          <div class="progressbar">
+            <progress class="progress"></progress>
+          </div>
+          <div class="vol-controls">
+            <img class="invert" src="assests/icons/volume-high-solid.svg" alt="volume">
+          </div>
+          <div class="play-controls">
+            <img class="invert" src="assests/icons/shuffle-solid.svg" alt="shuffle">
+            <img class="invert" src="assests/icons/backward-step-solid.svg" alt="backward step">
+            <img class="invert" src="assests/icons/circle-play-solid.svg" alt="play button" />
+            <img class="invert" src="assests/icons/forward-step-solid.svg" alt="forward step" />
+          </div>
+        </div>
+        <!-- playbar end -->
       </div>
+      <!-- right panel end -->
     </div>
+    <!-- container end -->
+
     <script src="script.js"></script>
   </body>
 </html>
